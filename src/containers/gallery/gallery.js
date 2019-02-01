@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import MediaCard from '../../components/MediaCard/MediaCard';
+import './gallery.scss';
 class Gallery extends Component {
-    render(){
-        return (<h1>Gallery Page</h1>
-
+    render() {
+        return (
+                <div>
+            <MediaCard/>
+                </div>
         );
     }
 }

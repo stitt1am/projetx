@@ -1,0 +1,37 @@
+
+.media-container {
+   display: flex;
+    justify-content: center;
+
+  .center {
+    width: 800px;
+  }
+  .card {
+    height: 400px;
+    width: 400px;
+    padding-top:50px;
+
+    .media-title{
+      background-color: red;
+      position:relative;
+      top:10px;
+      left:80px;
+      z-index:2;
+    }
+    .petalImg {
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+    }
+
+    .container {
+      border-radius: 15px;
+      background: darkslateblue;
+      margin-top: -51px;
+      width: 400px;
+      height: 130px;
+      color: white;
+
+    }
+  }
+}
