@@ -4,9 +4,17 @@ import './gallery.scss';
 class Gallery extends Component {
     render() {
         return (
-                <div>
-            <MediaCard/>
+                <div id ="container">
+                    <div>
+                    {/*<div className="artistContent">*/}
+                        {/*<MediaCard/>*/}
+                    {/*</div>*/}
+                        {/*<br />*/}
+                    <div className="musicPlayer">
+                        <MediaCard/>
+                    </div></div>
                 </div>
+
         );
     }
 }

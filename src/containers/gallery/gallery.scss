@@ -2,4 +2,42 @@
 body {
   background: rgb(5, 5, 83);
   background: linear-gradient(90deg, rgba(5, 5, 83, 1) 0%, rgba(148, 111, 159, 1) 40%, rgba(148, 111, 159, 1) 55%, rgba(246, 210, 157, 1) 100%);
+
+
+  //
+  //#container {
+  //  width: 2000px;
+  //  height: 1800px;
+  //  border: 1px solid black;
+  //  overflow: hidden; /* will contain if #first is longer than #second */
+  //}
+  //.artistContent {
+  //  width: 500px;
+  //  height: 800px;
+  //  //display: inline-block;
+  //  //margin-left: auto;
+  //  border: 1px solid red;
+  //}
+  //.MusicPlayer {
+  //  width: 500px;
+  //  height: 800px;
+  //  float: right;
+  //  border: 1px solid green;
+  //  overflow: hidden; /* if you don't want #second to wrap below #first */
+  //}
+
+
+  #container {
+    //background: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 1800px;
+  }
+
+  .musicPlayer, .artistContent {
+    //background: #ccc;
+    padding: 20px;
+  }
+
 }
