@@ -10,11 +10,11 @@ class MediaCard extends Component {
 
 
     static propTypes = {
-        id: PropTypes.string.isRequired,
+        id: PropTypes.string,
         name: PropTypes.string,
         image: PropTypes.img,
-        title: PropTypes.string.isRequired,
-        album: PropTypes.string.isRequired,
+        title: PropTypes.string,
+        album: PropTypes.string,
         playlist: PropTypes.oneOfType([
             PropTypes.string,
             PropTypes.number
@@ -47,32 +47,35 @@ class MediaCard extends Component {
         const {id, artist, image, title, album, playlist, handleChangeValue} = this.props;
         return (
 <div className="media-container">
-            <div className="card">
-                <div className="media-title">Artist Album</div>
-                <img src={petal} alt="Avatar" className="petalImg"/>
-                <div className="container">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+            {/*<div className="card">*/}
+                {/*<div className="media-title">Artist Album</div>*/}
+                {/*<img src={petal} alt="Avatar" className="petalImg"/>*/}
+                {/*<div className="container">*/}
+                    {/*<h4><b>John Doe</b></h4>*/}
+                    {/*<p>Architect & Engineer</p>*/}
 
-                </div>
+                {/*</div>*/}
 
 
-                <div>
-                    ...
-                    {/*<MusicPlayer playlist={this.playlist} />*/}
-                    ...
-                </div>
-            </div>
+                {/*<div>*/}
+                    {/*...*/}
+                    {/*/!*<MusicPlayer playlist={this.playlist} />*!/*/}
+                    {/*...*/}
+                {/*</div>*/}
+            {/*</div>*/}
+
+
+
+
 
     <div className="card">
-        <div className="media-title">${album}</div>
-        <img src=${image} alt="Avatar" className="petalImg"/>
+        <div className="media-title">{this.props.album}</div>
+        <img src={this.props.image} alt="Avatar" className="petalImg"/>
         <div className="container">
-            <h4><b>${artist}</b></h4>
-            <p>Architect & Engineer</p>
+            <h4><b>{this.props.artist}</b></h4>
+            <p>{this.props.title}</p>
 
         </div>
-
 
         <div>
             ...
