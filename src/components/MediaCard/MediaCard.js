@@ -1,11 +1,27 @@
 // import styled from 'styled-components';
 import React, {Component} from 'react';
 import './MediaCard.scss';
-import MusicPlayer from 'react-responsive-music-player';
-import petal from '../../image/petals.jpg'
+import petal from '../../image/petals.jpg';
+import PropTypes from 'prop-types';
+
 
 
 class MediaCard extends Component {
+
+
+    static propTypes = {
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string,
+        image: PropTypes.img,
+        title: PropTypes.string.isRequired,
+        album: PropTypes.string.isRequired,
+        playlist: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.number
+        ]),
+        artist: PropTypes.string,
+        handleChangeValue: PropTypes.func.isRequired
+    };
 
      playlist = [
         {
@@ -27,11 +43,12 @@ class MediaCard extends Component {
         }
     ]
     render() {
+
+        const {id, artist, image, title, album, playlist, handleChangeValue} = this.props;
         return (
 <div className="media-container">
             <div className="card">
-                <div className="media-title">Artist
-                    Album</div>
+                <div className="media-title">Artist Album</div>
                 <img src={petal} alt="Avatar" className="petalImg"/>
                 <div className="container">
                     <h4><b>John Doe</b></h4>
@@ -42,10 +59,27 @@ class MediaCard extends Component {
 
                 <div>
                     ...
-                    <MusicPlayer playlist={this.playlist} />
+                    {/*<MusicPlayer playlist={this.playlist} />*/}
                     ...
                 </div>
             </div>
+
+    <div className="card">
+        <div className="media-title">${album}</div>
+        <img src=${image} alt="Avatar" className="petalImg"/>
+        <div className="container">
+            <h4><b>${artist}</b></h4>
+            <p>Architect & Engineer</p>
+
+        </div>
+
+
+        <div>
+            ...
+            {/*<MusicPlayer playlist={this.playlist} />*/}
+            ...
+        </div>
+    </div>
 
 
 
