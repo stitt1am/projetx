@@ -1,0 +1,52 @@
+$accent: #6C2EB9;
+
+
+.box{
+
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+}
+.container{
+  background: rgb(5, 5, 83);
+  width: 100%;
+  height: 550px;
+}
+
+// Used by <ButtonGroup />
+.button-group {
+
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.button {
+  position: relative;
+  outline: none;
+  background-color: $accent;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 12px;
+  color: #FFF;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px rgba(#000, 0.2), 0 2px 0 rgba($accent, 0.2);
+
+
+
+
+  &:hover {
+    .tooltip {
+      top: -100%;
+      opacity: 1;
+    }
+  }
+
+}
