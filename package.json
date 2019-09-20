@@ -8,6 +8,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-motion": "^0.5.2",
+    "react-props-noop": "^1.0.0",
     "react-redux": "^6.0.0",
     "react-responsive-music-player": "^0.3.0",
     "react-router": "^4.3.1",
