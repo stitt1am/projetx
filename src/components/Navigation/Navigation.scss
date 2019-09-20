@@ -2,6 +2,21 @@ $accent: #6C2EB9;
 //$accent: #F1404B;
 
 
+.container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  display: block;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  //flex-wrap: nowrap;
+  margin: 0 auto;
+  transform-origin: center;
+  //transform: translate(-50%, -50%) scale(1, 1);
+  background-color: #61dafb;
+}
+
 // Used by <ButtonGroup />
 .button-group {
   display: flex;
@@ -109,19 +124,4 @@ $accent: #6C2EB9;
   }
 }
 
-.container {
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-  //display: block;
-  //align-items: center;
-  //flex-direction: row;
-  //justify-content: center;
-  //flex-wrap: nowrap;
-  //margin: 0 auto;
-  //transform-origin: center;
-  //transform: translate(-50%, -50%) scale(1, 1);
-  background-color: darkblue;
-  width: 100%;
-  height: 450px;
-}
+

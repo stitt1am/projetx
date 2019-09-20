@@ -6,7 +6,16 @@ import {Router, Route} from 'react-router';
 
 class Home extends Component {
     render(){
-        return (<Navigation/>);
+        return (
+
+            <div className="">
+
+
+            <Navigation/>
+
+        dfdfs
+            </div>
+        );
     }
 }
 
