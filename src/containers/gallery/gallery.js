@@ -8,20 +8,20 @@ import dots from '../../image/dots.jpg';
 class Gallery extends Component {
     render() {
         return (
-                <div id ="container">
-                    <div>
+            <div id="container">
+
 
                     <div className="musicPlayer">
                         <MediaCard
                             image={dots}
                             title="Hey Love"
                             album="Test Dummy"
-                            artist="No Real Data"
-                        />
-                    </div   ></div>
-                </div>
+                            artist="No Real Data"/>
+                    </div>
+            </div>
 
-        );
+        )
+            ;
     }
 }
 

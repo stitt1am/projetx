@@ -3,15 +3,13 @@ $accent: #6C2EB9;
 
 
 .container {
-  position: absolute;
-  top: 5%;
-  left: 50%;
+
+
   display: block;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  //flex-wrap: nowrap;
-  margin: 0 auto;
+  width: 100%;
   transform-origin: center;
   //transform: translate(-50%, -50%) scale(1, 1);
   background-color:  rgb(5, 5, 83);
@@ -19,10 +17,14 @@ $accent: #6C2EB9;
 
 // Used by <ButtonGroup />
 .button-group {
+
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 40%;
+  margin: 0 auto;
+
 
 }
 

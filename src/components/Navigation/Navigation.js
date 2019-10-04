@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 const iconArrayOne = [1, 2, 3];
 const iconArrayTwo = [1, 2, 3].reverse();
-const tooltipArrayOne = ['One', 'Two', 'Three'];
+const tooltipArrayOne = ['One', 'Two', 'Gallery'];
 const tooltipArrayTwo = ['One', 'Two', 'Three'].reverse();
 
 const Button = (props) => <button className="button" style={props.style} onClick={props.onClick }>{props.children}</button>;
@@ -66,7 +66,7 @@ class Navigation extends Component {
                                             pointerEvents: this.state.active ? 'auto' : 'none',
                                         }}
                                     >
-                                        <Tooltip text={tooltipArrayOne[i]} />
+                                        <a href="http://yahoo.com"/>
                                         {iconArrayOne[i]}
                                     </Button>
                                 )}

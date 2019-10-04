@@ -1,0 +1,66 @@
+body {
+  font-family: 'Raleway', sans-serif;
+
+  background: rgb(5, 5, 83);
+  background: linear-gradient(90deg, rgba(5, 5, 83, 1) 0%, rgb(159, 8, 119) 40%, rgb(159, 10, 71) 55%, rgb(246, 35, 120) 100%);
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 300px auto auto;
+    //grid-template-rows: auto auto auto;
+
+    grid-gap: 10px;
+    //background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    //background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid aqua;
+    color: #FFFFFF;
+    font-size: 60pt;
+
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    //grid-column-end: 3;
+    border: 1px solid aqua;
+    //width: 1500px;
+    height: 500px;
+    background: rgb(4, 2, 83);
+    opacity: 50%;
+
+
+  }
+
+  .item3 {
+    border: 1px solid aqua;
+    color: #FFFFFF;
+    font-size: 60pt;
+  }
+
+  .item4 {
+    border: 1px solid aqua;
+    color: #FFFFFF;
+    font-size: 60pt;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400|Nunito:300');
+
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .numeral {
+    font-family: 'Nunito', 'Raleway', sans-serif;
+  }
+}
