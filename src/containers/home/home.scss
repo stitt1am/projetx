@@ -30,12 +30,13 @@ body {
 
   .item2 {
     grid-column-start: 2;
-    grid-column-end: 5;
-
+    grid-column-end: 4;
+    //grid-row-start: 1;
+    //grid-row-end: 2;
     //grid-column-end: 3;
     border: 1px solid aqua;
     //width: 1500px;
-    height: 500px;
+    //height: 100px;
     background: rgb(4, 2, 83);
     opacity: 50%;
 
