@@ -30,7 +30,17 @@ class Home extends Component {
 
                 <div className="grid-container">
                     <div className="item1">
-                        1234
+                        <div className="divTitle">
+                            <span className="titleName"><i className="fas fa-search"></i>Project Views</span>
+                            <span className="fiscalPeriod">january 2019</span>
+
+                        </div>
+                        <span className="numbers">120 564</span>
+                        <span className="ticker"><i className="fas fa-caret-up "></i>+ 2 039    </span>
+
+                        <Button  className="primary" handleAction={this.filesUpload}
+                                 label="OPEN STATISTIC">
+                        </Button>
                     </div>
                     <div className="item2">
                         <LineChart />

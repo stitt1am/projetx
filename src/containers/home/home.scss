@@ -45,7 +45,7 @@ body {
 
   }
 
-  .item3, .item6 {
+  .item3, .item6, .item1 {
     background-color: rgb(12, 1, 83);
     border: 1px solid aqua;
     color: #FFFFFF;
@@ -54,7 +54,9 @@ body {
 
     .ticker{
       float: right;
-      font-weight: bold;
+      //font-weight: bold;
+      font-family:"calling-code" !important;
+
       font-size: 12pt;
       .fa-caret-up{
         color:palegreen;
@@ -67,14 +69,6 @@ body {
       //background-color: red;
       padding: 15px 12px 30px 4px;
 
-      .fiscalPeriod {
-        //background-color: darkorange;
-        font-family: "courier-std";
-        opacity: 0.5;
-        filter: alpha(opacity=90);
-        font-size: 10pt;
-        float: right;
-      }
 
       .titleName {
         //background-color: peachpuff;
@@ -82,20 +76,41 @@ body {
         float: left;
         font-size: 12pt;
 
-        .fa-heart{
-          color:  rgb(246, 35, 120);
-          font-size: 8pt;
-          padding-right: 5px;
-        }
+
       }
 
+    }
 
+
+    .fiscalPeriod {
+      //background-color: darkorange;
+      font-family: "courier-std";
+      opacity: 0.5;
+      filter: alpha(opacity=90);
+      font-size: 10pt;
+      float: right;
     }
     .numbers {
       //background-color: aqua;
-      width: 50%;
+      width: 55%;
       float: left;
     }
+
+  }
+  .fa-heart{
+    color:  rgb(246, 35, 120);
+    font-size: 8pt;
+    padding-right: 5px;
+  }
+
+  .fa-search{
+    color:   rgb(12, 1, 83);
+    font-size: 8pt;
+    padding: 2px;
+    border-radius: 2px;
+    margin-right: 4px;
+
+    background-color: dodgerblue;
 
   }
 
