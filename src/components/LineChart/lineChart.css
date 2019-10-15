@@ -1,7 +1,10 @@
 .lineChart{
-    /*width: 500px;*/
+    width: 500px;
     /*height: 500px;*/
     /*background-color: white;*/
-    color: orangered;
     position: relative;
+}
+
+.chartTitle{
+    color:white;
 }

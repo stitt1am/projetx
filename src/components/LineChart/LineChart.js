@@ -17,12 +17,17 @@ class LineChart extends Component {
                 labels: ["1", "2","3","4", "5","6"],
                 datasets:[
                     {
-                        label: "Stuff",
+                        // label: "Stuff",
                         // backgroundColor: "white",
-                        data:[4,5,1,10,32,2,12]
+                        data:[4,5,1,10,32,2,12],
+                        // pointRadius:9,
+                        pointRotation:5,
+                        showLine:true,
+                        pointHitRadius:12,
+                        pointHoverBorderColor:'white'
                     },
                     {
-                        label: "letters",
+                        // label: "letters",
                         // backgroundColor: "pink",
                         data:[14,15,21,0,12,4,22]
                     }
@@ -36,12 +41,12 @@ class LineChart extends Component {
 
     setGradientColor = (canvas, color)  =>{
         const ctx = canvas.getContext('2d');
-        const gradient = ctx.createLinearGradient(0,0, 600, 500);
+        const gradient = ctx.createLinearGradient(0,0, 400, 400);
         gradient.addColorStop(0,color);
-        gradient.addColorStop(0.90, "rgba(0,255,0,0.75)");
-        gradient.addColorStop(0.90, "pink");
+        gradient.addColorStop(0.90, "rgb(159,8,119)");
+        gradient.addColorStop(0.90, "rgb(159, 10, 71)");
         // gradient.addColorStop(0.45, "blue");
-
+        // rgb(159, 8, 119) 40%, rgb(159, 10, 71
 
         return gradient;
     }
@@ -54,11 +59,13 @@ class LineChart extends Component {
         if (data.datasets) {
 
             console.log("datasets = ", data.datasets);
-            let colors = ["rgba(255,0,255,0.75)", "rgba(0,255,0,0.75)"];
+            let colors = ["rgba(246, 35, 120)", "blue"];
             data.datasets.map((set, i) => {
                 // set.backgroundColor = this.setGradientColor(canvas, colors[i]);
                 set.borderColor=this.setGradientColor(canvas, colors[i]);
                 set.borderWidth=5;
+                set.showLine= true;
+                set.pointRadius =0;
             });
         }
 
@@ -70,7 +77,7 @@ class LineChart extends Component {
 
 
             <div className="lineChart">
-                <h3>Chart Sample</h3>
+                <h3 className="chartTitle"> Chart Sample</h3>
 
 
                 <Line
