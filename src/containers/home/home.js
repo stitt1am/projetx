@@ -6,6 +6,8 @@ import {Router, Route} from 'react-router';
 import Gallery from "../gallery/gallery";
 import Button from "../../../src/components/Button/button";
 import LineChart from "../../components/LineChart/LineChart";
+import  PieChart from "../../components/PieChart/pieChart";
+
 
 
 class Home extends Component {
@@ -32,6 +34,7 @@ class Home extends Component {
                 <div className="grid-container">
                     <div className="item1">
                         <div className="divTitle">
+
                             <span className="titleName"><i className="fas fa-search"></i>Project Views</span>
                             <span className="fiscalPeriod">january 2019</span>
 
@@ -43,7 +46,7 @@ class Home extends Component {
                                 label="OPEN STATISTIC">
                         </Button>
                     </div>
-                    <div className="item2">
+                    <div className="item2">2
                         <LineChart/>
                     </div>
                     <div className="item3">
@@ -57,9 +60,8 @@ class Home extends Component {
                                 label="OPEN STATISTIC">
                         </Button>
                     </div>
-                    <div className="item4">4</div>
-                    <div className="item5">5</div>
-                    <div className="item6">
+
+                    <div className="item6">4
                         <div className="divTitle">
                             <span className="titleName"><i className="fas fa-project-diagram"></i>Project Views</span>
                             <span className="fiscalPeriod">january 2019</span>
@@ -71,16 +73,20 @@ class Home extends Component {
                     </div>
                     <div className="item7">
                         <span className="fiscalPeriod">january 2019</span>
-
-                        <span> <i className="fas fa-search"></i>114 933</span>
-                        <span><i className="fas fa-heart"></i>2 896</span>
-                        <span> <i className="fas fa-project-diagram"></i>878</span>
+                        <div className="summaryIndex">
+                            <span> <i className="fas fa-search"></i>114 933</span>
+                            <span><i className="fas fa-heart"></i>2 896</span>
+                            <span> <i className="fas fa-project-diagram"></i>878</span>
+                        </div>
+                        <div className=><PieChart/></div>
                         <Button className="primary" handleAction={this.filesUpload}
                                 label="OPEN STATISTIC">
-                        </Button></div>
-                    <div className="item8"><LineChart/>
+                        </Button>
+                    </div>
+                    <div className="item8">6<LineChart/>
                     </div>
                 </div>
+                
 
             </div>
 

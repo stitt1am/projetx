@@ -1,43 +1,43 @@
 
 body {
-  //background: rgb(5, 5, 83);
-  //background: linear-gradient(90deg, rgba(5, 5, 83, 1) 0%, rgb(159, 8, 119) 40%, rgb(159, 10, 71) 55%, rgb(246, 11, 91) 100%);
+  background: rgb(5, 5, 83);
+  background: linear-gradient(90deg, rgba(5, 5, 83, 1) 0%, rgb(159, 8, 119) 40%, rgb(159, 10, 71) 55%, rgb(246, 11, 91) 100%);
 
 
-  //
-  //#container {
-  //  width: 2000px;
-  //  height: 1800px;
-  //  border: 1px solid black;
-  //  overflow: hidden; /* will contain if #first is longer than #second */
-  //}
-  //.artistContent {
-  //  width: 500px;
-  //  height: 800px;
-  //  //display: inline-block;
-  //  //margin-left: auto;
-  //  border: 1px solid red;
-  //}
-  //.MusicPlayer {
-  //  width: 500px;
-  //  height: 800px;
-  //  float: right;
-  //  border: 1px solid green;
-  //  overflow: hidden; /* if you don't want #second to wrap below #first */
-  //}
+
+  #container {
+    width: 2000px;
+    height: 1800px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+  }
+  .artistContent {
+    width: 500px;
+    height: 800px;
+    //display: inline-block;
+    //margin-left: auto;
+    border: 1px solid red;
+  }
+  .MusicPlayer {
+    width: 500px;
+    height: 800px;
+    float: right;
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+  }
 
 
-  //#container {
-  //  //background: #e7e7e7;
-  //  display: flex;
-  //  justify-content: center;
-  //  padding: 40px;
-  //  width: 1800px;
-  //}
+  #container {
+    //background: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    width: 1800px;
+  }
 
   .musicPlayer, .artistContent {
-    //background: #ccc;
-    //padding: 20px;
+    background: #ccc;
+    padding: 20px;
   }
 
 }

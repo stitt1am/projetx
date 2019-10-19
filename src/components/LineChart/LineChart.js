@@ -84,9 +84,6 @@ class LineChart extends Component {
                     options={{responsive: true}}
                     data={this.getChartData}
                 />
-
-
-
             </div>
 
 
