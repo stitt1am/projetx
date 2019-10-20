@@ -61,7 +61,7 @@ class Home extends Component {
                         </Button>
                     </div>
 
-                    <div className="item6">4
+                    <div className="item6">
                         <div className="divTitle">
                             <span className="titleName"><i className="fas fa-project-diagram"></i>Project Views</span>
                             <span className="fiscalPeriod">january 2019</span>
@@ -74,16 +74,16 @@ class Home extends Component {
                     <div className="item7">
                         <span className="fiscalPeriod">january 2019</span>
                         <div className="summaryIndex">
-                            <span> <i className="fas fa-search"></i>114 933</span>
-                            <span><i className="fas fa-heart"></i>2 896</span>
-                            <span> <i className="fas fa-project-diagram"></i>878</span>
+                            <span className="sum"><i className="fas fa-search"></i>114 933</span>
+                            <span className="sum"><i className="fas fa-heart"></i>2 896</span>
+                            <span className="sum"><i className="fas fa-project-diagram"></i>878</span>
                         </div>
-                        <div className=><PieChart/></div>
-                        <Button className="primary" handleAction={this.filesUpload}
-                                label="OPEN STATISTIC">
-                        </Button>
+                        <div><PieChart/></div>
+                        {/*<Button className="primary" handleAction={this.filesUpload}*/}
+                                {/*label="OPEN STATISTIC">*/}
+                        {/*</Button>*/}
                     </div>
-                    <div className="item8">6<LineChart/>
+                    <div className="item8"><LineChart/>
                     </div>
                 </div>
                 
