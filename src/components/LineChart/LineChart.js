@@ -14,12 +14,12 @@ class LineChart extends Component {
         super(props);
         this.state = {
             data:{
-                labels: ["1", "2","3","4", "5","6"],
+                labels: ["1","2","3","4", "5","6","4", "5","6"],
                 datasets:[
                     {
                         // label: "Stuff",
                         //  backgroundColor: "white",
-                        data:[4,5,1,10,32,2,12],
+                        data:[18,20,25,22,18,22,20,32,35],
                         showLine:true,
                         pointHitRadius:12,
                         pointHoverBorderColor:'white'
@@ -27,7 +27,7 @@ class LineChart extends Component {
                     {
                         // label: "letters",
                         // backgroundColor: "pink",
-                        data:[14,15,21,0,12,4,22],
+                        data:[3,5,2,0,12,4,18,12,15],
                         pointHoverBorderColor:'white',
                         borderDash:[6,6]
 
@@ -79,8 +79,6 @@ class LineChart extends Component {
 
 
             <div className="lineChart">
-
-
                 <Line
                     options={
                         {
@@ -126,7 +124,13 @@ class LineChart extends Component {
                                         label += Math.round(tooltipItem.yLabel * 100) / 100;
                                         return label;
                                     }
-                                }},
+                                },
+                                intersect:true,
+                                mode: 'label',  // or 'x-axis'
+                                backgroundColor:'rgb(5, 5, 83)',
+                                bodyFontFamily: 'Helvetica'
+
+                                },
                         }}
                     data={this.getChartData}
                 />
