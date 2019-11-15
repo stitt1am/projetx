@@ -18,10 +18,8 @@ class LineChart extends Component {
                 datasets:[
                     {
                         // label: "Stuff",
-                        // backgroundColor: "white",
+                        //  backgroundColor: "white",
                         data:[4,5,1,10,32,2,12],
-                        // pointRadius:9,
-                        pointRotation:5,
                         showLine:true,
                         pointHitRadius:12,
                         pointHoverBorderColor:'white'
@@ -29,7 +27,10 @@ class LineChart extends Component {
                     {
                         // label: "letters",
                         // backgroundColor: "pink",
-                        data:[14,15,21,0,12,4,22]
+                        data:[14,15,21,0,12,4,22],
+                        pointHoverBorderColor:'white',
+                        borderDash:[6,6]
+
                     }
 
                 ]
@@ -62,6 +63,7 @@ class LineChart extends Component {
             let colors = ["rgba(246, 35, 120)", "blue"];
             data.datasets.map((set, i) => {
                 // set.backgroundColor = this.setGradientColor(canvas, colors[i]);
+                set.pointHoverBackgroundColor = this.setGradientColor(canvas, colors[i]);
                 set.borderColor=this.setGradientColor(canvas, colors[i]);
                 set.borderWidth=5;
                 set.showLine= true;
@@ -77,11 +79,55 @@ class LineChart extends Component {
 
 
             <div className="lineChart">
-                <h3 className="chartTitle"> Chart Sample</h3>
 
 
                 <Line
-                    options={{responsive: true}}
+                    options={
+                        {
+                            scales: {
+                                xAxes: [{
+                                    gridLines: {
+                                        display: true,
+                                        color: 'rgba(246, 11, 91,0.3)',
+                                        lineWidth: 0.5,
+                                        drawTicks: true,
+                                        drawBorder: false,
+
+                                        // zeroLineWidth:30,
+                                        // zeroLineColor: 'white',
+                                        //  tickMarkLength:13,
+                                        // zeroLineWidth:300,
+                                        // zeroLineBorderDash:50
+                                    }
+                                    , ticks: {
+                                        display: false,
+
+                                    }
+
+                                }],
+                                yAxes: [{
+                                    gridLines: {
+                                        display: false,
+                                        drawBorder: false,
+
+                                    }, ticks: {
+                                        display: false
+                                    }
+                                }],
+                            },
+                            legend: {display: false,},
+                            tooltips: {callbacks: {
+                                    label: function (tooltipItem, data) {
+                                        var label = data.datasets[tooltipItem.datasetIndex].label || 'right he4re';
+
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        label += Math.round(tooltipItem.yLabel * 100) / 100;
+                                        return label;
+                                    }
+                                }},
+                        }}
                     data={this.getChartData}
                 />
             </div>
