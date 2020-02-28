@@ -6,8 +6,8 @@ body {
 
 
   #container {
-    width: 2000px;
-    height: 1800px;
+    width: 500px;
+    height: 900px;
     border: 1px solid black;
     overflow: hidden; /* will contain if #first is longer than #second */
   }
@@ -32,12 +32,12 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px;
-    width: 1800px;
+    width: 900px;
   }
 
   .musicPlayer, .artistContent {
-    background: #ccc;
-    padding: 20px;
+  //  background: #ccc;
+   // padding: 20px;
   }
 
 }

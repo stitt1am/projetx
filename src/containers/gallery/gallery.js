@@ -18,6 +18,15 @@ class Gallery extends Component {
                             album="Test Dummy"
                             artist="No Real Data"/>
                     </div>
+
+
+                {/*<div className="musicPlayer">*/}
+                    {/*<MediaCard*/}
+                        {/*image={dots}*/}
+                        {/*title="Hey Love"*/}
+                        {/*album="Test Dummy"*/}
+                        {/*artist="No Real Data"/>*/}
+                {/*</div>*/}
             </div>
 
         )
