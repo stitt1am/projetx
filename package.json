@@ -12,12 +12,22 @@
     "react-motion": "^0.5.2",
     "react-props-noop": "^1.0.0",
     "react-redux": "^6.0.0",
-    "react-responsive-music-player": "^0.3.0",
+    "react-responsive-music-player": "^0.4.3",
     "react-router": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.3.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +45,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "@babel/cli": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-import": "^1.11.0",
+    "babel-core": "^6.24.1"
   }
 }

@@ -1,13 +1,13 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import React, {Component} from 'react';
 import './MediaCard.scss';
 import petal from '../../image/petals.jpg';
 import PropTypes from 'prop-types';
-// import MusicPlayer from '../../../node_modules/react-responsive-music-player/dist/MusicPlayer';
-import MusicPlayer from 'react-responsive-music-player';
+
 
 
 class MediaCard extends Component {
+
 
 
     static propTypes = {
@@ -45,15 +45,49 @@ class MediaCard extends Component {
     ]
     render() {
 
+
+
+
+
         const {id, artist, image, title, album, playlist, handleChangeValue} = this.props;
         return (
 
 
-    <div>
-        <MusicPlayer playlist={this.playlist} />
+<div className="media-container">
+            {/*<div className="card">*/}
+                {/*<div className="media-title">Artist Album</div>*/}
+                {/*<img src={petal} alt="Avatar" className="petalImg"/>*/}
+                {/*<div className="container">*/}
+                    {/*<h4><b>John Doe</b></h4>*/}
+                    {/*<p>Architect & Engineer</p>*/}
+
+                {/*</div>*/}
+
+
+
+                    {/*<MusicPlayer playlist={this.playlist} />*/}
+
+
+            {/*</div>*/}
+
+
+
+
+
+    <div className="card">
+        <div className="media-title">{this.props.album}</div>
+        <img src={this.props.image} alt="Avatar" className="petalImg"/>
+        <div className="container">
+            <h4><b>{this.props.artist}</b></h4>
+            <p>{this.props.title}</p>
 
         </div>
 
+    </div>
+
+
+
+</div>
         );
     }
 }
