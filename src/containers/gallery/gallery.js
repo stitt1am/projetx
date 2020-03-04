@@ -34,11 +34,11 @@ class Gallery extends Component {
         return (
             <div id="container">
                 <div>
-                    <MusicPlayer playlist={playlist}
-                                 progressColor="black"
-                                 btnColor="hotpink"
-                                 mode="vertical"
-                    />
+                    {/*<MusicPlayer playlist={playlist}*/}
+                                 {/*progressColor="black"*/}
+                                 {/*btnColor="hotpink"*/}
+                                 {/*mode="vertical"*/}
+                    {/*/>*/}
                 </div>
 
                 <div className="musicPlayer">

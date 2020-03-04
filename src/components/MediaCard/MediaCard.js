@@ -66,16 +66,13 @@ class MediaCard extends Component {
             {/*</div>*/}
 
 
-
-
-
     <div className="card">
         <div className="media-title">{this.props.album}</div>
-        <img src={this.props.image} alt="Avatar" className="petalImg"/>
+            <img src={this.props.image} alt="Avatar" className="petalImg"/>
         <div className="container">
             <h4><b>{this.props.artist}</b></h4>
             <p>{this.props.title}</p>
-
+            <div className="controls">in the controls</div>
         </div>
 
     </div>
