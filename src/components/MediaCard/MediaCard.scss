@@ -1,7 +1,7 @@
 
 .media-container {
-   display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
   .center {
     width: 800px;
@@ -9,14 +9,14 @@
   .card {
     height: 400px;
     width: 400px;
-    padding-top:50px;
+    padding-top: 50px;
 
-    .media-title{
+    .media-title {
       position: relative;
       top: 214px;
       left: 0px;
       z-index: 2;
-      color:ghostwhite;
+      color: ghostwhite;
     }
     .petalImg {
       width: 400px;
@@ -32,12 +32,18 @@
       height: 130px;
       color: white;
 
-      .controls{
-        background-color: #331E8B;
-        color:#f5f5f5;
-        border-radius:2px 2px 15px 15px;
-        height: 44%;
+      .controls {
+        background-color: #513F97;
+        color: #f5f5f5;
+        border-radius: 2px 2px 15px 15px;
+        //height: 44%;
+        height: 115%;
+        //font-size:30px;
+        //position: relative;
+        //top: 18px;
       }
+
+
 
     }
   }

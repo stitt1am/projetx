@@ -1,0 +1,43 @@
+table {
+  color: #cec4c4;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  border-collapse:
+          collapse; border-spacing: 0;
+}
+
+td, th {
+  border: 1px solid transparent; /* No more visible border */
+  height: 30px;
+  transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {
+  background: #DFDFDF;  /* Darken header a bit */
+  font-weight: bold;
+}
+
+td {
+  background: #FAFAFA;
+  text-align: left;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+//tr:nth-child(even) td { background: #F1F1F1; }
+tr:nth-child(even) td { background: #8577bd; }
+
+
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+//tr:nth-child(odd) td { background: #FEFEFE; }
+tr:nth-child(odd) td { background: #473d8b; }
+
+#473d8b
+
+tr td:hover { background: #666; color: #FFF; }
+
+.fa-heart{
+  color: rgb(97, 140, 246) !important;
+  font-size: 12pt;
+  padding: 0px 5px 5px !important;
+}

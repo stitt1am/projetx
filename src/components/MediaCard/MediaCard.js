@@ -1,6 +1,7 @@
 // import styled from 'styled-components';
 import React, {Component} from 'react';
 import './MediaCard.scss';
+import Table from '../../components/Table/table.js';
 import petal from '../../image/petals.jpg';
 import PropTypes from 'prop-types';
 
@@ -72,7 +73,9 @@ class MediaCard extends Component {
         <div className="container">
             <h4><b>{this.props.artist}</b></h4>
             <p>{this.props.title}</p>
-            <div className="controls">in the controls</div>
+            <div className="controls">
+                <Table/>
+            </div>
         </div>
 
     </div>

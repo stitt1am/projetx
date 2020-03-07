@@ -45,8 +45,8 @@ class Gallery extends Component {
                     <MediaCard
                         image={petal}
                         title="Hey Love"
-                        album="Test Dummy"
-                        artist="No Real Data"/>
+                        album=""
+                        artist=""/>
                 </div>
 
 
@@ -54,8 +54,8 @@ class Gallery extends Component {
                 <MediaCard
                 image={dots}
                 title="Hey Love"
-                album="Test Dummy"
-                artist="No Real Data"/>
+                album=""
+                artist=""/>
                 </div>
             </div>
 
